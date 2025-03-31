@@ -4,17 +4,17 @@ import { Leaf } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-bonsai-green text-white mt-16">
+    <footer className="bg-hikari-burgundy text-white mt-16">
       <div className="container mx-auto px-4 py-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Logo & Description */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
               <span className="bg-white rounded-full p-1.5">
-                <Leaf className="h-5 w-5 text-bonsai-green" />
+                <Leaf className="h-5 w-5 text-hikari-burgundy" />
               </span>
               <span className="font-serif text-xl font-bold text-white">
-                Bonsai<span className="text-bonsai-sand">Bazaar</span>
+                HIKARI<span className="text-hikari-gold">Bonsai</span>
               </span>
             </Link>
             <p className="text-sm max-w-xs text-white/80">
@@ -48,7 +48,7 @@ const Footer = () => {
                 placeholder="Seu e-mail"
                 className="bg-white/20 text-white placeholder:text-white/60 px-3 py-2 rounded-md text-sm w-full focus:outline-none focus:ring-2 ring-white/30"
               />
-              <button className="bg-white text-bonsai-green px-3 py-2 rounded-md hover:bg-white/90 transition-colors text-sm font-medium">
+              <button className="bg-hikari-gold text-hikari-burgundy px-3 py-2 rounded-md hover:bg-hikari-gold/90 transition-colors text-sm font-medium">
                 Assinar
               </button>
             </form>
@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/20 mt-10 pt-6 text-center text-sm text-white/70">
-          <p>© {new Date().getFullYear()} BonsaiBazaar. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} HIKARIBonsai. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -53,15 +52,27 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Custom Bonsai colors
+				hikari: {
+					burgundy: {
+						DEFAULT: '#5C1E1E',
+						light: '#7A2828'
+					},
+					gold: {
+						DEFAULT: '#C3A661',
+						light: '#D6BD7C',
+						dark: '#A48C4A'
+					},
+					cream: '#F5F2E9',
+					dark: '#2D2A24'
+				},
 				bonsai: {
 					green: {
-						DEFAULT: '#4A6E4D',
-						light: '#80A082'
+						DEFAULT: '#5C1E1E',
+						light: '#7A2828'
 					},
 					sand: {
-						DEFAULT: '#D9C9BA',
-						dark: '#BFA58E'
+						DEFAULT: '#C3A661',
+						dark: '#A48C4A'
 					},
 					dark: '#2D2A24'
 				},

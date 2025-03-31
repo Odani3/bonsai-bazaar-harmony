@@ -16,35 +16,35 @@
     --popover: 36 33% 97%;
     --popover-foreground: 24 12% 10%;
 
-    --primary: 124 20% 36%;
+    --primary: 0 60% 24%;
     --primary-foreground: 36 33% 97%;
 
-    --secondary: 35 30% 82%;
+    --secondary: 43 45% 57%;
     --secondary-foreground: 24 12% 10%;
 
-    --muted: 35 20% 90%;
-    --muted-foreground: 24 8% 40%;
+    --muted: 43 30% 90%;
+    --muted-foreground: 0 40% 20%;
 
-    --accent: 35 30% 82%;
+    --accent: 43 45% 57%;
     --accent-foreground: 24 12% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 36 33% 97%;
 
-    --border: 35 20% 80%;
-    --input: 35 20% 80%;
-    --ring: 124 20% 36%;
+    --border: 43 30% 80%;
+    --input: 43 30% 80%;
+    --ring: 0 60% 24%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 36 33% 97%;
-    --sidebar-foreground: 24 8% 40%;
-    --sidebar-primary: 124 20% 36%;
+    --sidebar-foreground: 0 40% 20%;
+    --sidebar-primary: 0 60% 24%;
     --sidebar-primary-foreground: 36 33% 97%;
-    --sidebar-accent: 35 30% 82%;
+    --sidebar-accent: 43 45% 57%;
     --sidebar-accent-foreground: 24 12% 10%;
-    --sidebar-border: 35 20% 80%;
-    --sidebar-ring: 124 20% 36%;
+    --sidebar-border: 43 30% 80%;
+    --sidebar-ring: 0 60% 24%;
   }
 }
 
@@ -60,10 +60,10 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif text-bonsai-dark;
+    @apply font-serif text-hikari-dark;
   }
 
   .zen-box {
-    @apply border border-bonsai-sand-dark bg-white/80 rounded-lg p-6 shadow-sm backdrop-blur-sm;
+    @apply border border-hikari-gold bg-white/80 rounded-lg p-6 shadow-sm backdrop-blur-sm;
   }
 }
