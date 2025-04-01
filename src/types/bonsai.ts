@@ -23,8 +23,8 @@ export type BonsaiCategory =
   | 'outdoor';
 
 export interface BonsaiFilters {
-  category?: BonsaiCategory;
-  careLevel?: Bonsai['careLevel'];
+  category?: BonsaiCategory | 'all';
+  careLevel?: Bonsai['careLevel'] | 'all';
   priceRange?: {
     min: number;
     max: number;

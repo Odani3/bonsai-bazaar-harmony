@@ -87,14 +87,14 @@ const BonsaiFilters = ({
           <div className="space-y-2">
             <Label htmlFor="category">Categoria</Label>
             <Select
-              value={filters.category || ""}
+              value={filters.category || "all"}
               onValueChange={handleCategoryChange}
             >
               <SelectTrigger id="category">
                 <SelectValue placeholder="Todas categorias" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">Todas categorias</SelectItem>
+                <SelectItem value="all">Todas categorias</SelectItem>
                 <SelectItem value="shohin">Shohin</SelectItem>
                 <SelectItem value="mame">Mame</SelectItem>
                 <SelectItem value="chuhin">Chuhin</SelectItem>
@@ -110,14 +110,14 @@ const BonsaiFilters = ({
           <div className="space-y-2">
             <Label htmlFor="careLevel">Nível de Cuidado</Label>
             <Select
-              value={filters.careLevel || ""}
+              value={filters.careLevel || "all"}
               onValueChange={handleCareLevelChange}
             >
               <SelectTrigger id="careLevel">
                 <SelectValue placeholder="Todos níveis" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">Todos níveis</SelectItem>
+                <SelectItem value="all">Todos níveis</SelectItem>
                 <SelectItem value="beginner">Iniciante</SelectItem>
                 <SelectItem value="intermediate">Intermediário</SelectItem>
                 <SelectItem value="expert">Avançado</SelectItem>

@@ -12,12 +12,12 @@ const Catalog = () => {
   const filteredBonsais = useMemo(() => {
     return bonsais.filter((bonsai) => {
       // Filter by category
-      if (filters.category && bonsai.category !== filters.category) {
+      if (filters.category && filters.category !== "all" && bonsai.category !== filters.category) {
         return false;
       }
 
       // Filter by care level
-      if (filters.careLevel && bonsai.careLevel !== filters.careLevel) {
+      if (filters.careLevel && filters.careLevel !== "all" && bonsai.careLevel !== filters.careLevel) {
         return false;
       }
 
