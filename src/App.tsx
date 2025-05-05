@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Catalog from "./pages/Catalog";
 import BonsaiDetail from "./pages/BonsaiDetail";
+import AboutUs from "./pages/AboutUs";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/registro" element={<Register />} />
             <Route path="/catalogo" element={<Catalog />} />
             <Route path="/bonsai/:id" element={<BonsaiDetail />} />
+            <Route path="/sobre" element={<AboutUs />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
