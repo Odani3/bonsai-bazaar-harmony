@@ -38,7 +38,8 @@ export const bonsais: Bonsai[] = [
     description: "Este Acer Palmatum (Bordo Japonês) exibe cores vibrantes que mudam com as estações. No outono, suas folhas se transformam em tons espetaculares de vermelho e laranja.",
     careLevel: "intermediate",
     imageUrl: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86",
-    stock: 2
+    stock: 2,
+    featured: true
   },
   {
     id: "4",
@@ -50,7 +51,8 @@ export const bonsais: Bonsai[] = [
     description: "Ideal para iniciantes, este Ficus Retusa é conhecido por sua resistência e facilidade de cultivo. Seu tronco robusto e raízes aéreas criam uma aparência ancestral mesmo em espécimes jovens.",
     careLevel: "beginner",
     imageUrl: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
-    stock: 5
+    stock: 5,
+    featured: true
   },
   {
     id: "5",
@@ -62,7 +64,8 @@ export const bonsais: Bonsai[] = [
     description: "O Zelkova Serrata, com sua casca descascando delicadamente e pequenas folhas ovais, evoca a imagem das árvores que adornam os templos antigos do Japão.",
     careLevel: "expert",
     imageUrl: "https://images.unsplash.com/photo-1466442929976-97f336a657be",
-    stock: 2
+    stock: 2,
+    featured: true
   },
   {
     id: "6",
@@ -74,6 +77,8 @@ export const bonsais: Bonsai[] = [
     description: "Este olmo chinês exemplifica o estilo Penjing, com tronco sinuoso e copa em forma de guarda-chuva. Suas pequenas folhas proporcionam uma sensação de escala perfeita.",
     careLevel: "beginner",
     imageUrl: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86",
-    stock: 3
+    stock: 3,
+    featured: true
   }
 ];
+
