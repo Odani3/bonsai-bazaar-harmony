@@ -4,11 +4,14 @@ import { Link } from "react-router-dom";
 import { Leaf, ShoppingCart, User, Search, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/context/AuthContext";
+import { useCart } from "@/context/CartContext";
 
 const Navbar = () => {
   const { authState, logout } = useAuth();
   const { isAuthenticated, user } = authState;
+  const { getCartCount } = useCart();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const cartCount = getCartCount();
 
   return (
     <nav className="bg-white/80 backdrop-blur-md border-b border-hikari-gold sticky top-0 z-50">
@@ -42,10 +45,18 @@ const Navbar = () => {
             <Button variant="ghost" size="icon">
               <Search className="h-5 w-5 text-hikari-dark" />
             </Button>
-            <Button variant="ghost" size="icon">
-              <ShoppingCart className="h-5 w-5 text-hikari-dark" />
-              <span className="sr-only">Carrinho</span>
-            </Button>
+            
+            <Link to="/carrinho">
+              <Button variant="ghost" size="icon" className="relative">
+                <ShoppingCart className="h-5 w-5 text-hikari-dark" />
+                {cartCount > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-bonsai-green text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                    {cartCount > 99 ? '99+' : cartCount}
+                  </span>
+                )}
+                <span className="sr-only">Carrinho</span>
+              </Button>
+            </Link>
             
             {isAuthenticated ? (
               <div className="flex items-center gap-3">
@@ -65,7 +76,18 @@ const Navbar = () => {
           </div>
           
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-2">
+            <Link to="/carrinho">
+              <Button variant="ghost" size="icon" className="relative">
+                <ShoppingCart className="h-5 w-5 text-hikari-dark" />
+                {cartCount > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-bonsai-green text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                    {cartCount > 99 ? '99+' : cartCount}
+                  </span>
+                )}
+              </Button>
+            </Link>
+            
             <Button variant="ghost" onClick={() => setIsMenuOpen(!isMenuOpen)} size="icon">
               {isMenuOpen ? 
                 <X className="h-5 w-5 text-hikari-dark" /> : 
@@ -92,9 +114,6 @@ const Navbar = () => {
               <div className="flex justify-between items-center">
                 <Button variant="ghost" size="icon">
                   <Search className="h-5 w-5" />
-                </Button>
-                <Button variant="ghost" size="icon">
-                  <ShoppingCart className="h-5 w-5" />
                 </Button>
                 {isAuthenticated ? (
                   <Button variant="outline" onClick={logout}>

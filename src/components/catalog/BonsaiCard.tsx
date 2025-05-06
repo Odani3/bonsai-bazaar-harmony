@@ -4,12 +4,21 @@ import { Bonsai } from "@/types/bonsai";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
+import { useCart } from "@/context/CartContext";
 
 interface BonsaiCardProps {
   bonsai: Bonsai;
 }
 
 const BonsaiCard = ({ bonsai }: BonsaiCardProps) => {
+  const { addToCart } = useCart();
+  
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    addToCart(bonsai, 1);
+  };
+  
   const getCareLevelLabel = (level: Bonsai["careLevel"]) => {
     switch (level) {
       case "beginner":
@@ -81,7 +90,12 @@ const BonsaiCard = ({ bonsai }: BonsaiCardProps) => {
               Detalhes
             </Button>
           </Link>
-          <Button size="icon" className="bg-bonsai-green hover:bg-bonsai-green/80">
+          <Button 
+            size="icon" 
+            className="bg-bonsai-green hover:bg-bonsai-green/80"
+            onClick={handleAddToCart}
+            disabled={bonsai.stock === 0}
+          >
             <ShoppingCart className="h-4 w-4" />
           </Button>
         </div>

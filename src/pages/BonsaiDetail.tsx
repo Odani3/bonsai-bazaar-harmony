@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
@@ -7,13 +6,14 @@ import { Separator } from "@/components/ui/separator";
 import { Leaf, ShoppingCart, ArrowLeft } from "lucide-react";
 import { bonsais } from "@/data/bonsais";
 import { Bonsai } from "@/types/bonsai";
-import { toast } from "@/components/ui/use-toast";
+import { useCart } from "@/context/CartContext";
 
 const BonsaiDetail = () => {
   const { id } = useParams<{ id: string }>();
   const [bonsai, setBonsai] = useState<Bonsai | null>(null);
   const [loading, setLoading] = useState(true);
   const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useCart();
 
   useEffect(() => {
     // Simulando fetch de dados
@@ -61,10 +61,7 @@ const BonsaiDetail = () => {
   }
 
   const handleAddToCart = () => {
-    toast({
-      title: "Adicionado ao carrinho",
-      description: `${quantity}x ${bonsai.name} adicionado ao seu carrinho.`,
-    });
+    addToCart(bonsai, quantity);
   };
 
   const getCareLevelLabel = (level: Bonsai["careLevel"]) => {
