@@ -2,8 +2,43 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { 
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext
+} from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
+
+const bonsaiImages = [
+  "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9",
+  "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86",
+  "https://images.unsplash.com/photo-1466442929976-97f336a657be",
+  "https://images.unsplash.com/photo-1507988914355-bf49fdacce38",
+  "https://images.unsplash.com/photo-1502394202744-021cfbb17454"
+];
 
 const Hero = () => {
+  const [api, setApi] = useState<any>(null);
+  const [autoPlay, setAutoPlay] = useState(true);
+  
+  useEffect(() => {
+    if (!api) return;
+    
+    let interval: number | undefined;
+    
+    if (autoPlay) {
+      interval = window.setInterval(() => {
+        api.scrollNext();
+      }, 3000);
+    }
+    
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [api, autoPlay]);
+
   return (
     <section className="relative min-h-[80vh] bg-gradient-to-b from-hikari-gold/10 to-transparent">
       <div className="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center">
@@ -54,15 +89,52 @@ const Hero = () => {
           </div>
         </div>
         
-        {/* Right column with image */}
+        {/* Right column with image carousel */}
         <div className="md:w-1/2 mt-12 md:mt-0">
           <div className="relative aspect-square max-w-lg mx-auto">
             <div className="absolute inset-0 rounded-full bg-hikari-gold/30 -translate-x-4 -translate-y-4"></div>
-            <img
-              src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9"
-              alt="Bonsai majestoso"
-              className="relative z-10 rounded-full object-cover aspect-square shadow-lg"
-            />
+            
+            <div className="relative z-10 w-full h-full">
+              <Carousel 
+                setApi={setApi}
+                className="w-full h-full"
+                opts={{ 
+                  loop: true,
+                  watchDrag: false 
+                }}
+              >
+                <CarouselContent>
+                  {bonsaiImages.map((image, index) => (
+                    <CarouselItem key={index} className="cursor-pointer">
+                      <div className="w-full h-full">
+                        <img
+                          src={image}
+                          alt={`Bonsai arte ${index + 1}`}
+                          className="w-full h-full rounded-full object-cover aspect-square shadow-lg"
+                        />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <div className="absolute inset-0 flex items-center justify-between z-20">
+                  <CarouselPrevious 
+                    variant="ghost"
+                    size="icon" 
+                    className="h-8 w-8 rounded-full bg-white/70 hover:bg-white border-0"
+                    onMouseEnter={() => setAutoPlay(false)} 
+                    onMouseLeave={() => setAutoPlay(true)}
+                  />
+                  <CarouselNext 
+                    variant="ghost"
+                    size="icon"
+                    className="h-8 w-8 rounded-full bg-white/70 hover:bg-white border-0"
+                    onMouseEnter={() => setAutoPlay(false)} 
+                    onMouseLeave={() => setAutoPlay(true)}
+                  />
+                </div>
+              </Carousel>
+            </div>
+            
             <div className="absolute -bottom-4 -right-4 bg-white p-6 rounded-full shadow-lg zen-box z-20">
               <p className="font-serif text-lg font-medium text-hikari-burgundy">Harmonia</p>
               <p className="text-sm text-muted-foreground">Na palma da sua mão</p>
