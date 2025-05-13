@@ -29,6 +29,9 @@ const Navbar = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
+            <Link to="/landing" className="text-hikari-dark hover:text-hikari-burgundy transition-colors">
+              Landing
+            </Link>
             <Link to="/catalogo" className="text-hikari-dark hover:text-hikari-burgundy transition-colors">
               Catálogo
             </Link>
@@ -101,6 +104,9 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 animate-fade-in">
             <div className="flex flex-col space-y-3">
+              <Link to="/landing" className="px-3 py-2 rounded-md hover:bg-muted">
+                Landing
+              </Link>
               <Link to="/catalogo" className="px-3 py-2 rounded-md hover:bg-muted">
                 Catálogo
               </Link>
