@@ -17,6 +17,7 @@ import AboutUs from "./pages/AboutUs";
 import NotFound from "./pages/NotFound";
 import Cart from "./pages/Cart";
 import OrderComplete from "./pages/OrderComplete";
+import Onboarding from "./pages/Onboarding";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +39,7 @@ const App = () => (
               <Route path="/sobre" element={<AboutUs />} />
               <Route path="/carrinho" element={<Cart />} />
               <Route path="/pedido-concluido" element={<OrderComplete />} />
+              <Route path="/onboarding" element={<Onboarding />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </BrowserRouter>

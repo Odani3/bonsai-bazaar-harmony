@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Leaf, ShoppingCart, User, Search, Menu, X } from "lucide-react";
+import { Leaf, ShoppingCart, User, Search, Menu, X, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useAuth } from "@/context/AuthContext";
 import { useCart } from "@/context/CartContext";
@@ -37,6 +37,10 @@ const Navbar = () => {
             </Link>
             <Link to="/sobre" className="text-hikari-dark hover:text-hikari-burgundy transition-colors">
               Sobre Nós
+            </Link>
+            <Link to="/onboarding" className="text-hikari-dark hover:text-hikari-burgundy transition-colors flex items-center gap-1">
+              <Sparkles className="h-4 w-4" />
+              Qual Bonsai?
             </Link>
             <Link to="/cuidados" className="text-hikari-dark hover:text-hikari-burgundy transition-colors">
               Cuidados
@@ -112,6 +116,10 @@ const Navbar = () => {
               </Link>
               <Link to="/sobre" className="px-3 py-2 rounded-md hover:bg-muted">
                 Sobre Nós
+              </Link>
+              <Link to="/onboarding" className="px-3 py-2 rounded-md hover:bg-muted flex items-center gap-2">
+                <Sparkles className="h-4 w-4" />
+                Qual Bonsai?
               </Link>
               <Link to="/cuidados" className="px-3 py-2 rounded-md hover:bg-muted">
                 Cuidados
