@@ -2,16 +2,16 @@
 import { Bonsai } from "../types/bonsai";
 
 export const bonsais: Bonsai[] = [
-  {
+  { 
     id: "1",
     name: "Juniperus Chinensis",
     category: "shohin",
     age: 8,
     height: 24,
     price: 120,
-    description: "Este elegante Bonsai Juniperus Chinensis representa a verdadeira essência da harmonia. Com sua folhagem densa e cascata suave de galhos, traz a serenidade da natureza para qualquer ambiente.",
+    description: "Este é um belíssimo exemplar de bonsai do tipo pinheiro negro japonês, cultivado com maestria para expressar força, equilíbrio e serenidade. Sua estrutura exibe um tronco grosso, com casca rústica e textura envelhecida, que transmite a ideia de uma árvore antiga e resistente, mesmo em miniatura. Os galhos são distribuídos em camadas horizontais, com folhagens densas e bem podadas, formando o clássico estilo Niwaki ou “estilo em nuvem”, característico da estética japonesa.",
     careLevel: "beginner",
-    imageUrl: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
+    imageUrl:"https://images.unsplash.com/photo-1599598177991-ec67b5c37318?q=80&w=3125&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     stock: 3,
     featured: true
   },
@@ -24,7 +24,7 @@ export const bonsais: Bonsai[] = [
     price: 250,
     description: "Um majestoso Pinus com mais de 15 anos de cultivo cuidadoso. Sua silhueta única e textura irregular da casca refletem o wabi-sabi, a beleza na imperfeição.",
     careLevel: "intermediate",
-    imageUrl: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9",
+    imageUrl: "https://images.unsplash.com/photo-1641412722397-3be359096577?q=80&w=3036&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     stock: 1,
     featured: true
   },
@@ -37,7 +37,7 @@ export const bonsais: Bonsai[] = [
     price: 380,
     description: "Este Acer Palmatum (Bordo Japonês) exibe cores vibrantes que mudam com as estações. No outono, suas folhas se transformam em tons espetaculares de vermelho e laranja.",
     careLevel: "intermediate",
-    imageUrl: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86",
+    imageUrl: "https://images.unsplash.com/photo-1569873175476-10aa45523ab8?q=80&w=3117&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     stock: 2,
     featured: true
   },
@@ -50,9 +50,8 @@ export const bonsais: Bonsai[] = [
     price: 90,
     description: "Ideal para iniciantes, este Ficus Retusa é conhecido por sua resistência e facilidade de cultivo. Seu tronco robusto e raízes aéreas criam uma aparência ancestral mesmo em espécimes jovens.",
     careLevel: "beginner",
-    imageUrl: "https://images.unsplash.com/photo-1472396961693-142e6e269027",
-    stock: 5,
-    featured: true
+    imageUrl: "https://images.unsplash.com/photo-1599598425947-5202edd56bdb?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    stock: 5
   },
   {
     id: "5",
@@ -60,12 +59,11 @@ export const bonsais: Bonsai[] = [
     category: "shohin",
     age: 12,
     height: 25,
-    price: 175,
-    description: "O Zelkova Serrata, com sua casca descascando delicadamente e pequenas folhas ovais, evoca a imagem das árvores que adornam os templos antigos do Japão.",
+    price: 32.000,
+    description: "Este é um refinado exemplar de bonsai de Pinheiro Branco Japonês (Pinus parviflora), uma espécie nativa do Japão conhecida por suas agulhas delicadas, curtas e esverdeadas. A árvore está cultivada com elegância em um vaso arredondado de cerâmica cinza fosco, que complementa de forma sutil e harmônica sua estética natural.",
     careLevel: "expert",
-    imageUrl: "https://images.unsplash.com/photo-1466442929976-97f336a657be",
-    stock: 2,
-    featured: true
+    imageUrl: "https://images.unsplash.com/photo-1470364693235-a4fe27c60914?q=80&w=2848&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    stock: 2
   },
   {
     id: "6",
@@ -76,9 +74,7 @@ export const bonsais: Bonsai[] = [
     price: 110,
     description: "Este olmo chinês exemplifica o estilo Penjing, com tronco sinuoso e copa em forma de guarda-chuva. Suas pequenas folhas proporcionam uma sensação de escala perfeita.",
     careLevel: "beginner",
-    imageUrl: "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86",
-    stock: 3,
-    featured: true
+    imageUrl: "https://images.unsplash.com/photo-1707932700096-db113d55a026?q=80&w=2686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    stock: 3
   }
 ];
-

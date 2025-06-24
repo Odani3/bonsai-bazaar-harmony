@@ -12,11 +12,11 @@ import {
 import { useEffect, useState } from "react";
 
 const bonsaiImages = [
-  "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9",
-  "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86",
-  "https://images.unsplash.com/photo-1466442929976-97f336a657be",
-  "https://images.unsplash.com/photo-1507988914355-bf49fdacce38",
-  "https://images.unsplash.com/photo-1502394202744-021cfbb17454"
+  "https://i.pinimg.com/736x/dc/c5/67/dcc567c80a9598f828166f8d0a6c8596.jpg",
+  "https://images.unsplash.com/photo-1536727510301-a2e7a31bb6cf?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://plus.unsplash.com/premium_photo-1682377521362-c4e8be6e62b4?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "https://i.pinimg.com/736x/3d/3c/bd/3d3cbd8850bc55f312deca8ced70aacf.jpg",
+  "https://i.pinimg.com/736x/19/4c/73/194c732c5c895f465f30fd93f0fee331.jpg",
 ];
 
 const Hero = () => {
@@ -46,7 +46,7 @@ const Hero = () => {
         <div className="md:w-1/2 space-y-6 md:pr-12 text-center md:text-left">
           <div className="mb-6 mx-auto md:mx-0 max-w-[160px]">
             <img
-              src="/lovable-uploads/95378e80-8a44-4438-8cc2-1373a0439f9f.png"
+              src="/lovable-uploads/image-Photoroom.png"
               alt="HIKARI Bonsai Logo"
               className="w-full h-auto"
             />
@@ -67,15 +67,12 @@ const Hero = () => {
               </Button>
             </Link>
             <Link to="/cuidados">
-              <Button size="lg" variant="outline" className="border-hikari-burgundy text-hikari-burgundy hover:bg-hikari-burgundy hover:text-white">
-                Guia de Cuidados
-              </Button>
             </Link>
           </div>
           
           <div className="flex justify-center md:justify-start gap-8 pt-4">
             <div>
-              <p className="font-serif text-2xl font-bold text-hikari-burgundy">15+</p>
+              <p className="font-serif text-2xl font-bold text-hikari-burgundy">7+</p>
               <p className="text-sm text-muted-foreground">Anos de Experiência</p>
             </div>
             <div>
@@ -83,7 +80,7 @@ const Hero = () => {
               <p className="text-sm text-muted-foreground">Bonsais Cultivados</p>
             </div>
             <div>
-              <p className="font-serif text-2xl font-bold text-hikari-burgundy">1.2k+</p>
+              <p className="font-serif text-2xl font-bold text-hikari-burgundy">500+</p>
               <p className="text-sm text-muted-foreground">Clientes Satisfeitos</p>
             </div>
           </div>

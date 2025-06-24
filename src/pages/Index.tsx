@@ -42,7 +42,7 @@ const Index = () => {
               </div>
               <h3 className="font-serif text-xl font-semibold mb-2">Tradição & Expertise</h3>
               <p className="text-muted-foreground">
-                Mais de 15 anos de experiência no cultivo de bonsais tradicionais e modernos.
+                Mais de 7 anos de experiência no cultivo de bonsais tradicionais e modernos.
               </p>
             </div>
             
@@ -68,7 +68,7 @@ const Index = () => {
             <path d="M11.192 15.757c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16-.95.1-1.685.41-2.235.232-.398.58-.638 1.048-.722.52-.094 1.227-.013 2.15.337.48.174.98.142 1.415.48.433-.146.7-.44.816-.88s.087-.83-.046-1.195c-.13-.354-.37-.668-.68-.88-.93-.66-2.097-.643-2.93-.543-1.3.158-2.367.926-3.037 2.1-.675 1.175-.975 2.57-.958 4.02.01 1.36.257 2.44.683 3.324.43.894 1.05 1.62 1.855 2.005.81.384 1.77.572 2.89.572 1.015 0 1.937-.208 2.687-.6.77-.395 1.353-.92 1.77-1.562.414-.643.62-1.37.62-2.178v-.124c0-.9-.255-1.685-.769-2.255-.514-.57-1.155-.84-1.898-.84-.556 0-1.075.134-1.566.4s-.888.585-1.163 1.054c-.276.47-.41.934-.4 1.46v.125zm-.309 1.512c.199.48.57.782 1.085.782.475 0 .834-.175 1.08-.48.246-.306.376-.955.376-1.52 0-.936-.175-1.76-.481-1.96-.174-.17-.43-.254-.876-.254-.543 0-.936.198-1.084.594-.15.396-.193.96-.193 1.695 0 .502.031.924.093 1.143z"/>
           </svg>
           <p className="text-lg md:text-xl font-serif italic mb-6">
-            Os bonsais da BonsaiBazaar trouxeram uma nova energia para minha casa. A qualidade é excepcional e o suporte para cuidados é incrível. Recomendo a todos que buscam trazer um pouco da natureza para dentro de casa.
+            Os bonsais da Hikari trouxeram uma nova energia para minha casa. A qualidade é excepcional e o suporte para cuidados é incrível. Recomendo a todos que buscam trazer um pouco da natureza para dentro de casa.
           </p>
           <div>
             <p className="font-serif text-bonsai-dark font-medium">Mariana Santos</p>

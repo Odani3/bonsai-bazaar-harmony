@@ -155,47 +155,10 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-        
-        {/* Estratégias e Público */}
-        <div className="mb-16">
-          <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl font-semibold text-hikari-burgundy">Estratégias e Público-Alvo</h2>
-            <div className="w-24 h-0.5 bg-hikari-gold mx-auto mt-4 mb-8"></div>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="space-y-4">
-              <h3 className="text-xl font-serif font-semibold text-hikari-burgundy">Estratégias de Expansão</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                A Hikari Bonsai está focada em rejuvenescer o mercado de bonsai, buscando atrair as gerações Z e Alfa. 
-                Nossa estratégia digital inclui:
-              </p>
-              <ul className="space-y-3 pl-6 list-disc text-muted-foreground">
-                <li>Lives e Workshops Online: Atraindo novos entusiastas e criando uma comunidade digital.</li>
-                <li>Conteúdo no YouTube: Focado em educação e instrução técnica para quem deseja aprender mais sobre bonsai.</li>
-                <li>Feiras e Eventos Locais: Participação em feiras regionais e festivais como o Hanami Matsuri.</li>
-              </ul>
-            </div>
-            
-            <div className="space-y-4">
-              <h3 className="text-xl font-serif font-semibold text-hikari-burgundy">Nosso Público</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Definir perfis de Clientes Ideais é crucial para segmentar o mercado e desenvolver estratégias de marketing 
-                eficazes. Hikari Bonsai busca atender desde entusiastas tradicionais até as novas gerações, com foco em:
-              </p>
-              <ul className="space-y-3 pl-6 list-disc text-muted-foreground">
-                <li>Clientes com interesse genuíno na arte do bonsai e que buscam ativamente produtos e conhecimentos.</li>
-                <li>Pessoas que valorizam sustentabilidade, cultura e educação.</li>
-                <li>Entusiastas dispostos a se tornarem defensores da marca, recomendando-a a outros.</li>
-                <li>Gerações Y, Z e Alfa, que respondem bem a conteúdo visual interativo e compartilham suas experiências online.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        
+      
         {/* Call to Action */}
         <div className="text-center bg-hikari-burgundy text-white py-12 px-6 rounded-lg">
-          <h2 className="font-serif text-3xl font-semibold mb-4">Junte-se à Nossa Comunidade</h2>
+          <h2 className="font-serif text-3xl font-semibold mb-4 text-white">Junte-se à Nossa Comunidade</h2>
           <p className="text-white/80 max-w-2xl mx-auto mb-8">
             Visite nossa loja física em Curitiba ou participe de nossos workshops e eventos online. 
             Juntos, podemos cultivar não apenas bonsais, mas também uma comunidade apaixonada por esta arte milenar.

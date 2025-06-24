@@ -25,7 +25,7 @@ const Footer = () => {
           
           {/* Links */}
           <div className="space-y-4">
-            <h3 className="font-serif text-lg font-medium">Links Rápidos</h3>
+            <h3 className="font-serif text-lg font-medium text-white">Links Rápidos</h3>
             <div className="grid grid-cols-2 gap-2">
               <Link to="/catalogo" className="text-sm hover:underline">Catálogo</Link>
               <Link to="/sobre" className="text-sm hover:underline">Sobre Nós</Link>
@@ -38,7 +38,7 @@ const Footer = () => {
           
           {/* Newsletter */}
           <div className="space-y-4">
-            <h3 className="font-serif text-lg font-medium">Newsletter</h3>
+            <h3 className="font-serif text-lg font-medium text-white">Newsletter</h3>
             <p className="text-sm text-white/80">
               Receba dicas de cuidados, novidades e promoções exclusivas.
             </p>

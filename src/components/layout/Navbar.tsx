@@ -35,9 +35,6 @@ const Navbar = () => {
             <Link to="/sobre" className="text-hikari-dark hover:text-hikari-burgundy transition-colors">
               Sobre Nós
             </Link>
-            <Link to="/cuidados" className="text-hikari-dark hover:text-hikari-burgundy transition-colors">
-              Cuidados
-            </Link>
           </div>
           
           {/* User Actions */}
