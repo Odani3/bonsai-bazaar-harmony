@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, HelpCircle } from "lucide-react";
 import { 
   Carousel,
   CarouselContent,
@@ -60,13 +60,17 @@ const Hero = () => {
             Traga a paz e beleza dos jardins japoneses para o seu espaço com nossa seleção de bonsais cuidadosamente cultivados por especialistas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <Link to="/onboarding">
+              <Button size="lg" className="bg-emerald-600 hover:bg-emerald-700 text-white">
+                <HelpCircle className="mr-2 h-4 w-4" />
+                Encontrar Meu Bonsai
+              </Button>
+            </Link>
             <Link to="/catalogo">
-              <Button size="lg" className="bg-hikari-burgundy hover:bg-hikari-burgundy/80">
+              <Button size="lg" variant="outline" className="border-hikari-burgundy text-hikari-burgundy hover:bg-hikari-burgundy hover:text-white">
                 Explorar Catálogo
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-            </Link>
-            <Link to="/cuidados">
             </Link>
           </div>
           
